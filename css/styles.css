@@ -139,6 +139,20 @@ img {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image:linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ), 
+  url(../images/webstudio.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   }
 
 .hiro-title {
@@ -284,12 +298,42 @@ img {
   font-weight: 400;
   color: var(--secondary-color);
 }
+/*---------------Клиенты-------------*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  color: var(--primary-color);
+  
+  margin-bottom: 50px;
+}
+
+.clienta-list {
+  display: flex;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* --------------Подвал-------------- */
 .footer {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+ }
+
+.footer-cont {
+  display: flex;
 }
 
 .footer-logo {
@@ -305,7 +349,7 @@ img {
 }
 
 .footer-address {
-font-style: normal;
+  font-style: normal;
 }
 
 .footer-contact,
@@ -330,6 +374,29 @@ font-style: normal;
   display: block;
 }
 
+.join {
+  margin-left: 70px;
+}
+.join-titel {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+
+  padding-top: 12px;
+  margin-bottom: 20px;  
+}
+
+.join-list {
+  display: flex;
+}
+
+.join-item:not(:last-child) {
+margin-right: 10px;
+}
 /* -------------Портфолио--------------- */
 .main-project {
   padding-top: 94px;
